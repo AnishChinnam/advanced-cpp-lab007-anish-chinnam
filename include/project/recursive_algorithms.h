@@ -20,3 +20,12 @@ int arraySumIterative(const std::vector<int>& array);
 
 void reverseArray(std::vector<int>& array);
 void reverseArrayIterative(std::vector<int>& array);
+
+// Contracts for both forms:
+// factorial: 0 <= n <= 12; fibonacci: 0 <= n <= 46 (32-bit int).
+// Negative inputs throw invalid_argument; unrepresentable results throw overflow_error.
+// binarySearch requires ascending sorted input, returns any matching index or -1,
+// and throws length_error when the array size exceeds the int index range.
+// arraySum returns 0 for empty input and throws overflow_error if the final sum
+// cannot fit in int. Intermediate sums must fit in long long.
+// reverseArray modifies its input in place; empty and singleton inputs are valid.
